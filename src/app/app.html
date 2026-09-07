@@ -1,0 +1,15 @@
+<div class="vjs-cd-main">
+  <div class="vjs-cd-palette-wrapper">
+    <vjs-controls/>
+    <vjs-diagram-palette [showLabels]="true"
+                         [iconSize]="{width:120,height:80}"
+                         [allowDropOnEdge]="true"
+                         [autoEdgeConnect]="true"/>
+  </div>
+  <vjs-diagram style="flex-grow:1"
+               [options]="options"
+               [modelOptions]="modelOptions"
+               url="/dataset.json"/>
+  <circuit-diagram-inspector/>
+  <vjs-export-controls/>
+</div>

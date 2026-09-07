@@ -1,0 +1,13 @@
+@import "@visuallyjs/browser-ui/css/visuallyjs.css";
+@import "@visuallyjs/browser-ui-angular/css/visuallyjs-angular.css";
+@import "./app/circuit-diagram.css";
+
+body {
+  width:100vw;
+  height:100vh;
+  font-family: sans-serif;
+}
+
+vjs-diagram {
+  flex-grow:1;
+}
