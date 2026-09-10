@@ -1,6 +1,6 @@
 {
   "name": "visuallyjs-angular-circuit-diagram",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -26,7 +26,7 @@
     "@angular/forms": "^20.1.0",
     "@angular/platform-browser": "^20.1.0",
     "@angular/router": "^20.1.0",
-    "@visuallyjs/browser-ui-angular": "^1.2.5",
+    "@visuallyjs/browser-ui-angular": "^1.2.6",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
