@@ -1,11 +1,10 @@
 import {InspectorComponent, VisuallyJsModule} from '@visuallyjs/browser-ui-angular';
 import {Component} from '@angular/core';
-import {ShapePropertiesInspector} from './shape-properties-inspector';
 import {Node, Group} from "@visuallyjs/browser-ui";
 
 @Component({
   selector:"circuit-diagram-inspector",
-  imports:[VisuallyJsModule, ShapePropertiesInspector],
+  imports:[VisuallyJsModule],
   template:`
     @if(currentObjectType === "Node") {
       <div class="vjs-inspector-pane">
@@ -29,7 +28,7 @@ import {Node, Group} from "@visuallyjs/browser-ui";
                 <input type="text" vjs-att="label" placeholder="Label"/>
             </div>
             
-            <shape-properties-inspector [vertex]="asNode(currentObj)"></shape-properties-inspector>
+            <vjs-shape-properties-inspector [vertex]="asNode(currentObj)"></vjs-shape-properties-inspector>
         </div>
       </div>
     }
